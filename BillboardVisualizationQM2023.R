@@ -57,7 +57,7 @@ ggplot(songs, aes(x = week, y = position)) +
                          begin=.2, end=.9) +
   scale_y_continuous(name = "Chart Position",
                      trans = "reverse",
-                     breaks = seq(0,100,10)) +
+                     breaks = c(1,seq(10,100,10))) +
   scale_x_continuous(name = "Number of Weeks on the Chart",
                      breaks = seq(1,20,1)) +
   theme_classic() +
@@ -88,7 +88,7 @@ ggplot(songs, aes(x = week, y = position)) +
             size=1) +
   scale_y_continuous(name = "Chart Position",
                      trans = "reverse",
-                     breaks = seq(0,100,10)) +
+                     breaks = c(1,seq(10,100,10))) +
   scale_x_continuous(name = "Number of Weeks on the Chart",
                      breaks = seq(1,20,1)) +
   theme_classic() +
